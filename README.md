@@ -1,9 +1,9 @@
 C21.Koo.RouteApp
 
-##1.目录
+## 1.目录
 /ershoufang/
 
-##2.分页参数
+## 2.分页参数
 pg1,pg2,pg3
 
 ##3.js和css路径
@@ -44,4 +44,3 @@ https://bj.lianjia.com/ershoufang/andingmen/l2sir1/
 
 
 ##12.面积的自定义搜索
-
