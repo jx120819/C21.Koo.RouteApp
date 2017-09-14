@@ -1,5 +1,31 @@
 C21.Koo.RouteApp
 
+### 0.整理链家列表页规则
+(rp|rrt)[0-9]+
+
+http://xxx.com/{zufang||ershoufang}/{行政区拼音||行政区拼音-商圈拼音}
+http://xxx.com/{ditiefang||ditiezufang}/li{地铁编号}s{站点编号}
+li:地铁编号
+s:站点编号
+
+/p{1}p{N}a{1}a{N}l{1}l{N}t{1}t{N}y{N}sf{N}lc{N}f{N}de{N}bp{number}ep{number}ba{number}ea{number}co{tabIndex|sort_direction}pg{pageIndex}rs{keyword}/
+p:价格
+a:面积
+l:房型
+t:标签
+y:楼龄
+sf:房屋类型
+lc:楼层
+f:朝向
+de:装修
+bp:最低价格
+ep:最高价格
+ba:最小面积
+ea:最大面积
+co:选项卡和排序方向[1.最新房源，2.房源租金，3.房源面积，4.临近地铁]
+pg:分页
+keyword:搜索关键词
+
 ### 1.目录
 /ershoufang/
 
@@ -13,34 +39,3 @@ pg1,pg2,pg3
 不静态化
 
 ### 5.绑定模板(列表+分页)
-
-### 6.搜索（区域、商圈、小区）
-https://bj.lianjia.com/ershoufang/rs%E5%85%AB%E5%AE%9D%E5%B1%B1/
-
-
-### 7.位置-地区
-https://bj.lianjia.com/ershoufang/dongcheng/
-https://bj.lianjia.com/ershoufang/dongcheng/sir1/
-https://bj.lianjia.com/ershoufang/dongcheng/rs%E5%85%AB%E5%AE%9D%E5%B1%B1/sir1/
-
-
-### 8.位置-地铁
-https://bj.lianjia.com/ditiefang/li647sir1/
-https://bj.lianjia.com/ditiefang/li647s20555/sir1/
-
-##8.标签搜索
-售价-面积-房型-标签-更多
-下拉列表也是连接
-
-
-##9.排序
-默认-热门-最新-总价-单价-面积
-https://bj.lianjia.com/ditiefang/li647s20555/cdo21l2sir1/
-https://bj.lianjia.com/ershoufang/dongcheng/cdo21l2sir1/
-https://bj.lianjia.com/ershoufang/andingmen/l2sir1/
-
-
-##11.售价自定义搜索
-
-
-##12.面积的自定义搜索
