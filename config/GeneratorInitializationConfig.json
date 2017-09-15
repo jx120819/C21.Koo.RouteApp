@@ -1,0 +1,30 @@
+{
+  "B024": {
+    "rental": {
+      "tmplPath": "",
+      "htmlPath": ""
+    },
+    "sale": {
+      "tmplPath": "",
+      "htmlPath": ""
+    },
+    "community": {
+      "tmplPath": "",
+      "htmlPath": ""
+    }
+  },
+  "B025": {
+    "rental": {
+      "tmplPath": "",
+      "htmlPath": ""
+    },
+    "sale": {
+      "tmplPath": "",
+      "htmlPath": ""
+    },
+    "community": {
+      "tmplPath": "",
+      "htmlPath": ""
+    }
+  }
+}
