@@ -47,8 +47,7 @@ route:zufang/{condition}/
 http://localhost:36552/zufang/chaoyang/
 route:zufang/{district}/
 
-http://xxx.com/zufang/
-
+http://xxx.com/zufang/  
 301 Redirect: /zufang/pg1
 
 
