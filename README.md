@@ -53,7 +53,7 @@ http://xxx.com/zufang/
 
 
 /p{1}p{N}a{1}a{N}l{1}l{N}t{1}t{N}y{N}sf{N}lc{N}f{N}de{N}bp{number}ep{number}ba{number}ea{number}co{tabIndex|sort_direction}pg{pageIndex}rs{keyword}/
-p:价格
+p:价格  
 a:面积
 l:房型
 t:标签
