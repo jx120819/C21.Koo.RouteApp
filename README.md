@@ -20,53 +20,54 @@ route:zufang/{district}-{tradingarea}/{condition}rs{keyword}
 http://xxx.com/zufang/chaoyang-guomao/rs张三  
 route:zufang/{district}-{tradingarea}/rs{keyword}
 
-http://xxx.com/zufang/chaoyang-guomao/s1s2s3a1s2s3bs50000es90000pg1  
+http://xxx.com/zufang/chaoyang-guomao/s1s2s3a1s2s3bs50000es90000pg1
 route:/zufang/{district}-{tradingarea}/{condition}
 
-http://xxx.com/zufang/chaoyang-guomao/  
+http://xxx.com/zufang/chaoyang-guomao/
 route:zufang/{district}-{tradingarea}/
 
-http://localhost:36552/zufang/chaoyang/s1s2s3bs500es9999pg1rs张三  
+http://localhost:36552/zufang/chaoyang/s1s2s3bs500es9999pg1rs张三
 route:zufang/{district}/{condition}rs{keyword}
 
-http://localhost:36552/zufang/chaoyang/rs张三  
+http://localhost:36552/zufang/chaoyang/rs张三
 route:zufang/{district}/rs{keyword}
 
-http://localhost:36552/zufang/chaoyang/s1s2s3bs500es9999pg1a1a2  
+http://localhost:36552/zufang/chaoyang/s1s2s3bs500es9999pg1a1a2
 route:zufang/{district}/{condition}
 
-http://localhost:36552/zufang/a1a2a3s1s2s3bs500es900ba500ea5000pg1rs张三  
+http://localhost:36552/zufang/a1a2a3s1s2s3bs500es900ba500ea5000pg1rs张三
 route:zufang/{condition}rs{keyword}
 
-http://localhost:36552/zufang/rs张三  
+http://localhost:36552/zufang/rs张三
 route:zufang/rs{keyword}
 
-http://localhost:36552/zufang/a1a2a3s1s2s3bs500es900ba500ea5000pg1  
+http://localhost:36552/zufang/a1a2a3s1s2s3bs500es900ba500ea5000pg1
 route:zufang/{condition}/
 
-http://localhost:36552/zufang/chaoyang/  
+http://localhost:36552/zufang/chaoyang/
 route:zufang/{district}/
 
 http://xxx.com/zufang/  
-301 Redirect: /zufang/pg1  
+301 Redirect: /zufang/pg1
+
 
 
 /p{1}p{N}a{1}a{N}l{1}l{N}t{1}t{N}y{N}sf{N}lc{N}f{N}de{N}bp{number}ep{number}ba{number}ea{number}co{tabIndex|sort_direction}pg{pageIndex}rs{keyword}/
 p:价格  
-a:面积  
-l:房型  
-t:标签  
+a:面积
+l:房型
+t:标签
 y:楼龄
-sf:房屋类型  
+sf:房屋类型
 lc:楼层
-f:朝向  
-de:装修  
+f:朝向
+de:装修
 bp:最低价格
-ep:最高价格  
+ep:最高价格
 ba:最小面积
-ea:最大面积  
-co:选项卡和排序方向[1.最新房源，2.房源租金，3.房源面积，4.临近地铁]  
-pg:分页  
+ea:最大面积
+co:选项卡和排序方向[1.最新房源，2.房源租金，3.房源面积，4.临近地铁]
+pg:分页
 keyword:搜索关键词
 
 ### 1.目录
