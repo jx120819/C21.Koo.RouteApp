@@ -32,6 +32,8 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
 
             DefaultConditionModel conditionModel = new DefaultConditionModel();
 
+            conditionModel.AAAroute = ((Route)controllerContext.RouteData.Route).Url;
+
             switch (searchMode)
             {
                 case SearchMode.OnlyDistrict:
@@ -91,7 +93,6 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
             if (values.ContainsKey("condition"))
             {
                 string input = values["condition"].ToString();
-                bool flag10 = false;
                 foreach (Match matchItem in Regex.Matches(input, "[Pp][Bb]|([a-z]+\\d+)"))
                 {
                     #region //多选 + 自定义

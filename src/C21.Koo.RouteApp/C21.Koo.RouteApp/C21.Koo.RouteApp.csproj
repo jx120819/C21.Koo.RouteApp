@@ -108,6 +108,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HouseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -120,6 +121,7 @@
     <Compile Include="SearchConditionParsingEngine\MetaData\SortDirection.cs" />
     <Compile Include="SearchConditionParsingEngine\MetaData\TabItem.cs" />
     <Compile Include="SearchConditionParsingEngine\SearchConditionModelBinder.cs" />
+    <Compile Include="SearchConditionParsingEngine\SearchConditionRouteConstraint.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -133,8 +135,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\House\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -45,7 +45,9 @@ http://localhost:36552/zufang/a1a2a3s1s2s3bs500es900ba500ea5000pg1
 route:zufang/{condition}/
 
 http://localhost:36552/zufang/chaoyang/  
-route:zufang/{district}/
+route:zufang/{district}/  
+
+a1a2a3a4a5a6a7a8a9c1c2c3c4d0d1d2d3e1f1f2f3f4f5f6g1h1j1j2j3j4j5j6j7k1l1o0o1o2o3o4o5o6o7o8o9r1r2r3r4r5r6r7r8s1s2s3s4s5s6s7s8t1t2u1u2u3u4v0y1y2y3y4y5y6z2z3z4z5z6pg2ba30ea80bs30000es90000rs张三
 
 http://xxx.com/zufang/  
 301 Redirect: /zufang/pg1  
