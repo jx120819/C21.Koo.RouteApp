@@ -14,16 +14,16 @@ s:站点编号
 无任何条件
 
 
-http://xxx.com/zufang/chaoyang-guomao/s1s2s3a1s2s3bs50000es90000pg1rs张三  
+http://localhost:36552/zufang/chaoyang-guomao/s1s2s3a1s2s3bs50000es90000pg1rs张三  
 route:zufang/{district}-{tradingarea}/{condition}rs{keyword}
 
-http://xxx.com/zufang/chaoyang-guomao/rs张三  
+http://localhost:36552/zufang/chaoyang-guomao/rs张三  
 route:zufang/{district}-{tradingarea}/rs{keyword}
 
-http://xxx.com/zufang/chaoyang-guomao/s1s2s3a1s2s3bs50000es90000pg1  
+http://localhost:36552/zufang/chaoyang-guomao/s1s2s3a1s2s3bs50000es90000pg1  
 route:/zufang/{district}-{tradingarea}/{condition}
 
-http://xxx.com/zufang/chaoyang-guomao/  
+http://localhost:36552/zufang/chaoyang-guomao/  
 route:zufang/{district}-{tradingarea}/
 
 http://localhost:36552/zufang/chaoyang/s1s2s3bs500es9999pg1rs张三  

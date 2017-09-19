@@ -112,6 +112,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchConditionParsingEngine\ConditionModel\DefaultConditionModel.cs" />
+    <Compile Include="SearchConditionParsingEngine\ConditionModel\MultipleConditionModel.cs" />
+    <Compile Include="SearchConditionParsingEngine\ConditionModel\MultipleScopeGroupConditionModel.cs" />
+    <Compile Include="SearchConditionParsingEngine\ConditionModel\ScopeConditionModel.cs" />
+    <Compile Include="SearchConditionParsingEngine\MetaData\SearchMode.cs" />
+    <Compile Include="SearchConditionParsingEngine\MetaData\SortDirection.cs" />
+    <Compile Include="SearchConditionParsingEngine\MetaData\TabItem.cs" />
+    <Compile Include="SearchConditionParsingEngine\SearchConditionModelBinder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
