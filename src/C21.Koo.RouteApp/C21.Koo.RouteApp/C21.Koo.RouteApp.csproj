@@ -103,7 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="SearchConditionParsingEngine\README.txt" />
+    <None Include="SearchConditionParsingEngine\README.md" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
