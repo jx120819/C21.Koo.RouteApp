@@ -32,7 +32,9 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
 
             DefaultConditionModel conditionModel = new DefaultConditionModel();
 
+#if DEBUG
             conditionModel.AAAroute = ((Route)controllerContext.RouteData.Route).Url;
+#endif
 
             switch (searchMode)
             {

@@ -10,7 +10,9 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
     /// </summary>
     public class DefaultConditionModel
     {
+#if DEBUG
         public string AAAroute { get; set; }
+#endif
 
         /// <summary>
         /// 获取或设置 搜索模式
