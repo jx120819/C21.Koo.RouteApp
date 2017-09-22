@@ -227,16 +227,6 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
 
                     {
                         //
-                        Match matched = Regex.Match(matchItem.Value, "^(y)\\d+$");
-                        if (matched.Success)
-                        {
-                            conditionModel.FloorAge = matched.Value;
-                            continue;
-                        }
-                    }
-
-                    {
-                        //
                         Match matched = Regex.Match(matchItem.Value, "^(t)\\d+$");
                         if (matched.Success)
                         {

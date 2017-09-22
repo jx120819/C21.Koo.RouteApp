@@ -90,11 +90,6 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
         public string Floor { get; set; }
 
         /// <summary>
-        /// 获取或设置 楼龄
-        /// </summary>
-        public string FloorAge { get; set; }
-
-        /// <summary>
         /// 获取或设置 房屋类型
         /// </summary>
         public string RoomType { get; set; }
