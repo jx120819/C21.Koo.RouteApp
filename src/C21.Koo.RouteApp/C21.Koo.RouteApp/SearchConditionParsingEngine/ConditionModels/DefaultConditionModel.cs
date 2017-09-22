@@ -70,42 +70,42 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
         public MultipleConditionModel FeatureTagCondition { get; set; } = new MultipleConditionModel();
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 朝向
         /// </summary>
         public string Orientation { get; set; }
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 装修
         /// </summary>
         public string Decoration { get; set; }
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 付款方式
         /// </summary>
         public string PaymentType { get; set; }
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 楼层
         /// </summary>
         public string Floor { get; set; }
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 楼龄
         /// </summary>
         public string FloorAge { get; set; }
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 房屋类型
         /// </summary>
         public string RoomType { get; set; }
 
         /// <summary>
-        /// 获取或设置 
+        /// 获取或设置 当前页码
         /// </summary>
         public int PageIndex { get; set; } = 1;
 
         /// <summary>
-        /// 获取或设置 选项卡
+        /// 获取或设置 选项卡选项
         /// </summary>
         public TabItem TabIndex { get; set; }
 

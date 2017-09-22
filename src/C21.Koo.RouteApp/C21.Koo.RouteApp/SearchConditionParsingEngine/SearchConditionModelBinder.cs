@@ -50,7 +50,8 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                 case SearchMode.OnlySubway:
                     {
                         var subwayValue = values["subway"];
-                        if (!int.TryParse(subwayValue.ToString(), out int subway))
+                        int subway;
+                        if (!int.TryParse(subwayValue.ToString(), out subway))
                         {
                             throw new Exception("'subway' value format error.");
                         }
@@ -75,13 +76,15 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                 case SearchMode.BySubwayAndStation:
                     {
                         var subwayValue = values["subway"];
-                        if (!int.TryParse(subwayValue.ToString(), out int subway))
+                        int subway;
+                        if (!int.TryParse(subwayValue.ToString(), out subway))
                         {
                             throw new Exception("'subway' value format error.");
                         }
 
                         var stationValue = values["station"];
-                        if (!int.TryParse(stationValue.ToString(), out int station))
+                        int station;
+                        if (!int.TryParse(stationValue.ToString(), out station))
                         {
                             throw new Exception("'station' value format error.");
                         }
@@ -104,13 +107,15 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                         if (matched.Success)
                         {
                             int prefixLen = 2;
-                            if (matchItem.Value.StartsWith("bs") && int.TryParse(matched.Value.Substring(prefixLen), out int minValue))
+                            int minValue;
+                            if (matchItem.Value.StartsWith("bs") && int.TryParse(matched.Value.Substring(prefixLen), out minValue))
                             {
                                 conditionModel.PriceCondition.MinValue = minValue;
                                 continue;
                             }
 
-                            if (matchItem.Value.StartsWith("es") && int.TryParse(matched.Value.Substring(prefixLen), out int maxValue))
+                            int maxValue;
+                            if (matchItem.Value.StartsWith("es") && int.TryParse(matched.Value.Substring(prefixLen), out maxValue))
                             {
                                 conditionModel.PriceCondition.MaxValue = maxValue;
                                 continue;
@@ -127,13 +132,15 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                         if (matched.Success)
                         {
                             int prefixLen = 2;
-                            if (matchItem.Value.StartsWith("ba") && int.TryParse(matched.Value.Substring(prefixLen), out int minValue))
+                            int minValue;
+                            if (matchItem.Value.StartsWith("ba") && int.TryParse(matched.Value.Substring(prefixLen), out minValue))
                             {
                                 conditionModel.AreaCondition.MinValue = minValue;
                                 continue;
                             }
 
-                            if (matchItem.Value.StartsWith("ea") && int.TryParse(matched.Value.Substring(prefixLen), out int maxValue))
+                            int maxValue;
+                            if (matchItem.Value.StartsWith("ea") && int.TryParse(matched.Value.Substring(prefixLen), out maxValue))
                             {
                                 conditionModel.AreaCondition.MaxValue = maxValue;
                                 continue;
@@ -157,7 +164,7 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                     }
 
                     {
-                        //
+                        //房型
                         Match matched = Regex.Match(matchItem.Value, "^(f)\\d+$");
                         if (matched.Success)
                         {
@@ -167,8 +174,8 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                     }
 
                     {
-                        //
-                        Match matched = Regex.Match(matchItem.Value, "^(h|e|v)\\d+$");
+                        //特色标签
+                        Match matched = Regex.Match(matchItem.Value, "^(e|g|h|k|l|v)\\d+$");
                         if (matched.Success)
                         {
                             conditionModel.FeatureTagCondition.Add(matched.Value);
@@ -312,7 +319,8 @@ namespace C21.Koo.RouteApp.SearchConditionParsingEngine
                             if (matched.Success)
                             {
                                 int prefixLen = 2;
-                                if (int.TryParse(matched.Value.Substring(prefixLen), out int pageIndex))
+                                int pageIndex;
+                                if (int.TryParse(matched.Value.Substring(prefixLen), out pageIndex))
                                 {
                                     conditionModel.PageIndex = pageIndex;
                                 }
