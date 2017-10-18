@@ -88,11 +88,11 @@ pg1,pg2,pg3
 ### 6.查询列表数据
 
 ### 7.列表选项卡和排序
-默认排序：""
-最新房源、最新发布：P1
-房屋总价 (P2: ASC, P3: DESC)
-房屋单价 (P4: ASC, P5: DESC)
-房源面积 (P6: ASC, P7: DESC)
-房源租金 (P8: ASC, P9: DESC)
-热门房源：PA
+默认排序：""  
+最新房源、最新发布：P1  
+房屋总价 (P2: ASC, P3: DESC)  
+房屋单价 (P4: ASC, P5: DESC)  
+房源面积 (P6: ASC, P7: DESC)  
+房源租金 (P8: ASC, P9: DESC)  
+热门房源：PA  
 临近地铁：PB
